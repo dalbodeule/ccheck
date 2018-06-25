@@ -1,64 +1,36 @@
-<template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        ccheck
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+.row
+  sidebox(:data="[{id: 'test', title: '제작중'}]")
+  .col.s12.l11.pull-l1(style="min-height: 400px;")
+    #test.section.scrollspy
+      .card.z-depth-2
+        .card-content
+          p.card-title 제작중입니다....
+          p 아직 제작중입니다. 여기는 메인 페이지입니다.
 </template>
 
+<style>
+
+</style>
+
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import Sidebox from '~/components/Sidebox.vue'
+
+import buildmeta from '~/assets/buildmeta'
+
+const title = 'On Demand'
+const meta = buildmeta(title, 'On Demand 메인 페이지 입니다.',
+  '', 'small_sunshine', null)
 
 export default {
   components: {
-    AppLogo
+    Sidebox
+  },
+  head () {
+    return {
+      title,
+      meta
+    }
   }
 }
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
