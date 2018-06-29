@@ -38,7 +38,8 @@ module.exports = {
       './assets/jquery.sticky-kit.js',	
       './assets/scrollspy.js',	
       './assets/sidenav.js',	
-      './assets/sidebox.js'
+      './assets/sidebox.js',
+      './assets/judge.js'
     ],
     plugins: [
       new webpack.ProvidePlugin({

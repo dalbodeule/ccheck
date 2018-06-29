@@ -18,8 +18,8 @@ import Sidebox from '~/components/Sidebox.vue'
 
 import buildmeta from '~/assets/buildmeta'
 
-const title = 'On Demand'
-const meta = buildmeta(title, 'On Demand 메인 페이지 입니다.',
+const title = '저작권'
+const meta = buildmeta(title, '저작권 메인 페이지 입니다.',
   '', 'small_sunshine', null)
 
 export default {
