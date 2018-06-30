@@ -35,10 +35,14 @@ try {
 
   // static setup (chrome.html)
   app.use('/static/jquery',
-    express.static((path.resolve(__dirname, 'node_modules', 'jquery', 'dist'))))
+    express.static(path.resolve(__dirname, 'node_modules', 'jquery', 'dist')))
   app.use('/static/materializecss',
-    express.static((path.resolve(__dirname, 'node_modules', 'materialize-css', 'dist'))))
-
+    express.static(path.resolve(__dirname, 'node_modules', 'materialize-css', 'dist')))
+  app.use('/static/material-design-icons',
+    express.static(path.resolve(__dirname, 'node_modules', 'material-design-icons-iconfont', 'dist')))
+  app.use('/static/jquery.sticky-kit.js',
+    express.static(path.resolve(__dirname, 'assets', 'jquery.sticky-kit.js')))
+    
   // health moniter
   app.all('/health', (req, res) => {
     res.status(200).send().end()

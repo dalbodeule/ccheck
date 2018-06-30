@@ -1,6 +1,6 @@
 <template lang="pug">
 .row
-  sidebox(:data="[{id: 'judge', title: 'Judge'},{id: 'notice', title: 'Notice'}]")
+  sidebox(:data="[{id: 'judge', title: 'Judge'},{id: 'notice', title: 'Notice'},{id: 'flowchart', title: '플로차트'}]")
   .col.s12.l11.pull-l1(style="min-height: 400px;")
     #judge.section.scrollspy
       .card.z-depth-2
@@ -56,12 +56,22 @@
     #notice.section.scrollspy
       .card.z-depth-2
         .card-content
-          p.card-title 공지사항
+          p.card-title 알아두기
           p
-          | 본 테스트는 간이 저작권 검사로,
+          | 본 검사는 간이 저작권 검사로,
           | 저작권법의 개정, 본 테스트가 가지고 있는 헛점,
           | 컴퓨터 소프트웨어 등의 특수한 경우에는 다른 결과가
           | 나올 수 있습니다. 본 테스트만을 맹신하여서는 안됩니다.
+          p
+          | 대부분의 저작물에서는 본 간이 저작권 검사로
+          | 저작물의 사용 가능 여부를 확인해볼 수 있습니다.
+    #flowchart.section.scrollspy
+      .card.z-depth-2
+        .card-content
+          p.card-title 플로차트
+          p
+          | 본 검사는 다음의 플로차트를 이용하고 있습니다.
+          img(src='~/static/flowchart.png' style="width: 100%; height: 100%; display: block;")
 </template>
 
 <style>
