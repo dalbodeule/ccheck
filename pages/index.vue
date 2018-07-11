@@ -5,9 +5,9 @@
       #test.section.scrollspy
         .card.z-depth-2
           .card-content
-            p.card-title 간이 저작권 검사
+            p.card-title 간단 저작권 검사
             span
-              | 간이 저작권 검사 페이지로 이동합니다.
+              | 간단 저작권 검사 페이지로 이동합니다.
             br
             br
             nuxt-link.btn.light-blue.lighten-1(to="/judge") 살펴보기

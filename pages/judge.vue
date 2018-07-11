@@ -1,11 +1,25 @@
 <template lang="pug">
 .row
-  sidebox(:data="[{id: 'judge', title: 'Judge'},{id: 'notice', title: 'Notice'},{id: 'flowchart', title: '플로차트'}]")
+  sidebox(:data="[{id: 'notice', title: '알아두기'},{id: 'judge', title: '검사'},{id: 'flowchart', title: '순서도'}]")
   .col.s12.l11.pull-l1(style="min-height: 400px;")
+    #notice.section.scrollspy
+      .card.z-depth-2
+        .card-content
+          p.card-title 알아두기
+          p 본 검사는 간이 저작권 검사 입니다.
+          br
+          b 저작권법의 개정, 본 테스트가 가지고 있는 헛점, 컴퓨터 소프트웨어
+          p 등의 특수한 경우에는 다른 결과가
+            | 나올 수 있습니다.
+            | 이 테스트만을 맹신하여서는 안됩니다.
+          br
+          p
+            | 대부분의 저작물에서는 본 간이 저작권 검사로
+            | 저작물의 사용 가능 여부를 가늠해볼 수 있습니다.
     #judge.section.scrollspy
       .card.z-depth-2
         .card-content
-          p.card-title 간이 저작권 검사
+          p.card-title 간단 저작권 검사
           p 사용하려는 것이 저작권을 침해하는지 간단히 알아봅시다!
           br
           .center-align
@@ -53,26 +67,12 @@
                 button.btn.btn-large.red.darken-2(@click="buttonMethod(false)") 아니요?
             div(v-else-if="button=='result'")
               button.btn.btn-large.blue.lighten-1(@click="reset()") 처음으로!
-    #notice.section.scrollspy
-      .card.z-depth-2
-        .card-content
-          p.card-title 알아두기
-          p 본 검사는 간이 저작권 검사 입니다.
-          br
-          b 저작권법의 개정, 본 테스트가 가지고 있는 헛점, 컴퓨터 소프트웨어
-          p 등의 특수한 경우에는 다른 결과가
-            | 나올 수 있습니다.
-            | 이 테스트만을 맹신하여서는 안됩니다.
-          br
-          p
-            | 대부분의 저작물에서는 본 간이 저작권 검사로
-            | 저작물의 사용 가능 여부를 가늠해볼 수 있습니다.
     #flowchart.section.scrollspy
       .card.z-depth-2
         .card-content
-          p.card-title 플로차트
+          p.card-title 검사 순서도
           p
-            | 본 검사는 다음의 플로차트를 이용하고 있습니다.
+            | 이 검사는 이 검사 순서도를 이용하고 있습니다.
           img(src='~/static/flowchart.png' style="width: 100%; height: 100%; display: block;")
 </template>
 
