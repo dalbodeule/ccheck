@@ -1,6 +1,6 @@
 <template lang="pug">
   .row
-    sidebox(:data="[{id: 'test', title: '간이 검사'}, {id: 'sense', title: '토막상식'}, {id: 'info', title: '정보'}]")
+    sidebox(:data="[{id: 'test', title: '간단 검사'}, {id: 'sense', title: '토막상식'}, {id: 'info', title: '정보'}]")
     .col.s12.l11.pull-l1(style="min-height: 400px;")
       #test.section.scrollspy
         .card.z-depth-2
