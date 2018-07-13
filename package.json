@@ -1,6 +1,6 @@
 {
   "name": "ccheck",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "세종고등학교 진로부에서 기획한 간단 저작권 검사 사이트입니다.",
   "author": "small_sunshine <jioo0224@naver.com>",
   "private": true,
@@ -27,7 +27,7 @@
     "express": "^4.16.2",
     "express-useragent": "^1.0.12",
     "jquery": "^3.2.1",
-    "log4js": "^2.10.0",
+    "log4js": "^2.11.0",
     "material-design-icons-iconfont": "^3.0.3",
     "materialize-css": "^0.100.2",
     "moment": "^2.19.2",

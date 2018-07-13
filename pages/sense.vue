@@ -116,7 +116,7 @@ import Sidebox from '~/components/Sidebox.vue'
 
 import buildmeta from '~/assets/buildmeta'
 
-const title = '저작권 토막상식 :: 저작권'
+const title = '저작권 토막상식 :: 아하! 저작권'
 const meta = buildmeta(title, '저작권에 대한 토막상식을 담은 페이지입니다.',
   '', 'small_sunshine', null)
 

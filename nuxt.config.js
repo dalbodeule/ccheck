@@ -51,22 +51,14 @@ module.exports = {
     ]
   },
   modules: [
-    ['@nuxtjs/google-adsense'],
-    /*['@nuxtjs/google-analytics'],*/
+    ['@nuxtjs/google-analytics'],
     ['@nuxtjs/sitemap'],
     ['qonfucius-nuxt-fontawesome'],
     'nuxt-rfg-icon'
   ],
-  'google-adsense': {
-    id: 'ca-pub-2810659463174293',
-    pageLevelAds: true,
-    analyticsUacct: 'UA-61070671-7',
-    analyticsDomainName: 'mori.space',
-    test: true
+  'google-analytics': {
+    id: 'UA-61070671-9'
   },
-  /*'google-analytics': {
-    id: 'UA-61070671-7'
-  },*/
   sitemap: {
     path: '/sitemap.xml'
   },

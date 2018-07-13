@@ -87,7 +87,7 @@ import buildmeta from '~/assets/buildmeta'
 
 import * as Judge from '~/assets/judge'
 
-const title = '간단 저작권 검사 :: 저작권'
+const title = '간단 저작권 검사 :: 아하! 저작권'
 const meta = buildmeta(title, '간단 저작권 검사를 해볼 수 있는 페이지입니다.',
   '', 'small_sunshine', null)
 

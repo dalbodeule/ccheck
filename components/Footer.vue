@@ -15,7 +15,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <p>© 2017. 볕뉘(small-sunshine) all rights reserved.</p>
+        <p>© 2018. 최진우(small-sunshine) all rights reserved.</p>
       </div>
     </div>
   </footer>

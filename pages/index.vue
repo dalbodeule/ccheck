@@ -39,8 +39,8 @@ import Sidebox from '~/components/Sidebox.vue'
 
 import buildmeta from '~/assets/buildmeta'
 
-const title = '저작권'
-const meta = buildmeta(title, '저작권 메인 페이지 입니다.',
+const title = '아하! 저작권'
+const meta = buildmeta(title, '아하! 저작권 메인 페이지 입니다.',
   '', 'small_sunshine', null)
 
 export default {
