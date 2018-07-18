@@ -119,7 +119,7 @@ export default {
         let result
         switch (this.status) {
           case 'q1': result = Judge.q1(answer); break;
-          case 'q2': result = Judge.q2(answer); this.death = true; break;
+          case 'q2': result = Judge.q2(answer); this.death = (result == 'q3' ? true : false); break;
           case 'q3': result = Judge.q3(answer); break;
           case 'q4': result = Judge.q4(answer); break;
         }
