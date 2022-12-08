@@ -24,7 +24,7 @@
     "babel-core": "^6.26.3",
     "body-parser": "^1.18.2",
     "cross-env": "^5.1.1",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "express-useragent": "^1.0.12",
     "jquery": "^3.2.1",
     "log4js": "^2.11.0",
